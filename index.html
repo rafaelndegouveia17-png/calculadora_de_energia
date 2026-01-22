@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <title>Calculadora de eficiência energética para casas inteligentes</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h1>Calcule a eficiência energética da sua casa!</h1>
+      <p>Seja proativo e resolva o problema do consumo excessivo de energia</p>
+    </div>
+  </header>
+  <main>
+    {% block content %}
+    <h2 class="main__title">Selecione o tamanho da sua casa:</h2>
+    <ul class="list">
+      <li class="list__item">
+        <a href="/1">
+        <img class="item__img" src="../static/img/home.svg" alt="home">
+        <span>Uma casa pequena</span></a>
+      </li>
+      <!-- Assignment #1 -->
+      <li class="list__item">
+        <a href="/2">
+        <img class="item__img" src="/static/img/home.svg" alt="home">
+        <span>Uma casa média</span></a>
+      </li>
+      <li class="list__item">
+        <a href="/3">
+        <img class="item__img" src="/static/img/home.svg" alt="home">
+        <span>Uma casa grande</span></a>
+      <!--  -->
+      </li>
+    </ul>
+    {% endblock %}
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
